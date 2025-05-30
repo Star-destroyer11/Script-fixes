@@ -16,7 +16,7 @@
     }
     h1 {
       text-align: center;
-      color: #b22222; /* a warning red color */
+      color: #b22222;
       margin-bottom: 20px;
     }
     p {
@@ -27,6 +27,18 @@
       border-radius: 4px;
       color: #856404;
     }
+    code {
+      background-color: #e2e3e5;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+    .note {
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -34,9 +46,14 @@
   <h1>Important Security Notice</h1>
 
   <p>
-    If your server has the /script command enabled, it is or was vulnerable to a file manipulation exploit.
-    Someone could have used this exploit to sneak malicious code into your scripts.
-    To fix this, review all your scripts and remove any usage of the /script command.
+    If your server has the <code>/script</code> command enabled, it is or was vulnerable to a file manipulation exploit.
+    This exploit affects Minecraft version <strong>1.21.4-226</strong>.
+    An attacker could have used this vulnerability to sneak malicious code into your scripts.
+    To fix this, carefully review all your scripts and remove any usage of the <code>/script</code> command.
+  </p>
+
+  <p class="note">
+    To check your server version, use the command <code>/ver</code>.
   </p>
 
 </body>
